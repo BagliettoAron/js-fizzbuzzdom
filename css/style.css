@@ -10,23 +10,24 @@
 /* MAIN */
 .container{
     padding-top: 40px;
-    width: 80%;
-    margin: 0 auto;
-    /* TEST */
-    background-color: bisque;
+    width: 74%;
+    margin:0 auto;
 }
 
 .row{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 1%;
 }
 
 .number-box{
-    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 9%;
+    margin-top: 1%;
     height: 80px;
-    line-height: 80px;
     text-align: center;
     background-color: cornflowerblue;
-    margin: 3px;
 }

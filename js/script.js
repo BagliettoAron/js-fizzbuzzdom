@@ -24,4 +24,7 @@ for (let i = 1; i <= 100; i++) {
     }
 
     rowContent.innerHTML += `<div class="number-box">${FizzOrBuzz || i}</div>`;
+
+    const boxStyle = document.querySelector(".number-box");
+     
 }
