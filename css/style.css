@@ -7,11 +7,25 @@
     box-sizing: border-box;
 }
 
+/* HTML */
+html{
+    background-color:#083b4c ;
+}
+
 /* MAIN */
+
 .container{
     padding-top: 40px;
-    width: 74%;
+    width: 80%;
     margin:0 auto;
+    padding: 3rem 0;
+}
+
+.container h1{
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+    padding-bottom: 3rem;
 }
 
 .row{
@@ -29,5 +43,20 @@
     margin-top: 1%;
     height: 80px;
     text-align: center;
-    background-color: cornflowerblue;
+    background-color: #1389b2;
+}
+
+/* box color variable */
+
+
+.Fizz{
+    background-color: #0bd6a1;
+}
+
+.Buzz{
+    background-color: #ffd166;
+}
+
+.FizzBuzz{
+    background-color:#f0466f;
 }

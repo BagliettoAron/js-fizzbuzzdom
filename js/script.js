@@ -12,6 +12,7 @@ for (let i = 1; i <= 100; i++) {
 
     if (i % 3 === 0) {
         FizzOrBuzz = "Fizz";
+        // boxColor = ".box-color-green"
         if (i % 5 === 0){
             FizzOrBuzz = "FizzBuzz";
         }
@@ -23,8 +24,22 @@ for (let i = 1; i <= 100; i++) {
         }
     }
 
-    rowContent.innerHTML += `<div class="number-box">${FizzOrBuzz || i}</div>`;
+        rowContent.innerHTML += `<div class="number-box ${FizzOrBuzz}">${FizzOrBuzz || i}</div>`;
+       
+    
+        // let FizzOrBuzz = "Fizz"
 
-    const boxStyle = document.querySelector(".number-box");
-     
+        // boxColor = document.querySelector (".number-box")
+        // boxColor.classList.add(boxColor.value)
+
+  
+
+
+    // let boxColor = document.querySelector (".number-box")
+
+    
+
+    
+    
+    
 }
