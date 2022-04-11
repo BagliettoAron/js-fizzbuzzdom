@@ -4,42 +4,28 @@
 
 const rowContent = document.querySelector(".row");
 
-
+// 1.a. definire la cascata numerica
 for (let i = 1; i <= 100; i++) {
-
-    // 1.a. definire se sono multipli di 3
     let FizzOrBuzz = "";
-
+    
+    // 1.b. definire se è multiplo di 3
     if (i % 3 === 0) {
         FizzOrBuzz = "Fizz";
-        // boxColor = ".box-color-green"
+        // 1.c. definire se è anche multiplo di 5
         if (i % 5 === 0){
             FizzOrBuzz = "FizzBuzz";
         }
-
+        
+    // 1.b. definire se è multiplo di 3
     }else if (i % 5 === 0) { 
         FizzOrBuzz = "Buzz";
         if (i % 3 === 0){
+            // 1.c. definire se è anche multiplo di 5
             FizzOrBuzz = "FizzBuzz";
         }
     }
 
-        rowContent.innerHTML += `<div class="number-box ${FizzOrBuzz}">${FizzOrBuzz || i}</div>`;
-       
-    
-        // let FizzOrBuzz = "Fizz"
+    // 2. assegnazione colori e classi
+    rowContent.innerHTML += `<div class="number-box ${FizzOrBuzz}">${FizzOrBuzz || i}</div>`;
 
-        // boxColor = document.querySelector (".number-box")
-        // boxColor.classList.add(boxColor.value)
-
-  
-
-
-    // let boxColor = document.querySelector (".number-box")
-
-    
-
-    
-    
-    
 }
