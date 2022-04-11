@@ -8,6 +8,7 @@
 }
 
 /* HTML */
+
 html{
     background-color:#083b4c ;
 }
@@ -44,11 +45,10 @@ html{
     height: 80px;
     text-align: center;
     background-color: #1389b2;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.199);
 }
 
 /* box color variable */
-
-
 .Fizz{
     background-color: #0bd6a1;
 }
