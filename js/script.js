@@ -2,24 +2,26 @@
 // Per i multipli di 3 stampi “Fizz” al posto del numero e per i multipli di 5 stampi Buzz.
 // Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz.
 
-// 1. stampa nella console
+const rowContent = document.querySelector(".row");
+
+
 for (let i = 1; i <= 100; i++) {
 
     // 1.a. definire se sono multipli di 3
-    let multipleOf = "";
+    let FizzOrBuzz = "";
 
     if (i % 3 === 0) {
-        multipleOf = "Fizz";
+        FizzOrBuzz = "Fizz";
         if (i % 5 === 0){
-            multipleOf = "FizzBuzz";
+            FizzOrBuzz = "FizzBuzz";
         }
 
     }else if (i % 5 === 0) { 
-        multipleOf = "Buzz";
+        FizzOrBuzz = "Buzz";
         if (i % 3 === 0){
-            multipleOf = "FizzBuzz";
+            FizzOrBuzz = "FizzBuzz";
         }
     }
 
-    console.log(i, multipleOf)
+    rowContent.innerHTML += `<div class="number-box">${FizzOrBuzz || i}</div>`;
 }
